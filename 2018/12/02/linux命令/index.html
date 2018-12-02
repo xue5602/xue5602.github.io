@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>linux命令 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="curl命令：该命令是一个利用url规则在命令行下工作的文件传输工具，支持文件的上传和下载。curl支持http、https、ftp等协议语法 curl（选项）（参数） 系统中没有curl可以使用yum install curl安装curl url –slient （将下载文件输出到终端，所有的下载数据写入到stdout；–slient不显示进度信息）curl http://man.linuxde">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux命令">
+<meta property="og:url" content="http://yoursite.com/2018/12/02/linux命令/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="curl命令：该命令是一个利用url规则在命令行下工作的文件传输工具，支持文件的上传和下载。curl支持http、https、ftp等协议语法 curl（选项）（参数） 系统中没有curl可以使用yum install curl安装curl url –slient （将下载文件输出到终端，所有的下载数据写入到stdout；–slient不显示进度信息）curl http://man.linuxde">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-02T04:00:59.909Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="linux命令">
+<meta name="twitter:description" content="curl命令：该命令是一个利用url规则在命令行下工作的文件传输工具，支持文件的上传和下载。curl支持http、https、ftp等协议语法 curl（选项）（参数） 系统中没有curl可以使用yum install curl安装curl url –slient （将下载文件输出到终端，所有的下载数据写入到stdout；–slient不显示进度信息）curl http://man.linuxde">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-linux命令" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/02/linux命令/" class="article-date">
+  <time datetime="2018-12-02T03:44:10.000Z" itemprop="datePublished">2018-12-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      linux命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>curl命令：该命令是一个利用url规则在命令行下工作的文件传输工具，支持文件的上传和下载。curl支持http、https、ftp等协议<br>语法</p>
+<p>curl（选项）（参数）</p>
+<p>系统中没有curl可以使用yum install curl安装<br>curl url –slient （将下载文件输出到终端，所有的下载数据写入到stdout；–slient不显示进度信息）<br>curl <a href="http://man.linuxde.net/test.iso" target="_blank" rel="noopener">http://man.linuxde.net/test.iso</a> -o filename.iso –progress（-o是将下载的数据写入到文件，必须使用文件的绝对路径；–progress显示进度条）</p>
+<p>yum [options] [command] [package…]<br>options: 可选项，（-h帮助，-y当安装过程提示全部选择yes，-q不显示安装过程）<br>yum -y install nodejs</p>
+<p>常用命令</p>
+<ol>
+<li>ls 列出文件或文件目录</li>
+<li>cd    切换目录</li>
+<li>mkdir       创建文件夹</li>
+<li>unzip ***.zip     解压 .zip文件到当前目录（若提示找不到命令unzip，需要执行yum install -y unzip zip）</li>
+<li>tar -xvf  ***.tar   解压 .tar文件到当前目录</li>
+<li>tar xvJf   ***.tar.xz   解压 .tar.xz文件到当前目录</li>
+<li>rm -r    文件夹名称       -f  文件夹名称    删除文件夹 </li>
+<li>rm   文件名      删除文件</li>
+<li>cat  文件名      查看文件内容</li>
+<li>vi 文件名      进入文件,按下 i 键 ，出现 – INSERT– 就可以编辑了,按esc之后输入:wq, 保存并退出编辑模式 </li>
+<li>lsof -i  tcp:端口号  查看端口号 被哪个进程占用 （yum install lsof）  kill -9 端口号   杀掉进程</li>
+<li>pwd 查看当前文件的目录</li>
+<li>lsb_release -a  获取linux操作系统</li>
+<li>df -h  磁盘空间</li>
+<li>echo $LANG    查看linux下当前使用语言命令</li>
+<li>sudo -i 切换root用户</li>
+<li>mv 文件名 移动目的地文件名 （移动文件、重命名文件）</li>
+<li>scp url <a href="mailto:root@192.168.0.127" target="_blank" rel="noopener">root@192.168.0.127</a>:/url 上传文件</li>
+<li>yum uninstall nodejs （卸载node）</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/12/02/linux命令/" data-id="cjp6d00n40000a6cgj3tfd2je" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/02/linux命令/">linux命令</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
