@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>linux命令 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="curl命令：该命令是一个利用url规则在命令行下工作的文件传输工具，支持文件的上传和下载。curl支持http、https、ftp等协议语法 curl（选项）（参数） 系统中没有curl可以使用yum install curl安装curl url –slient （将下载文件输出到终端，所有的下载数据写入到stdout；–slient不显示进度信息）curl http://man.linuxde">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux命令">
+<meta property="og:url" content="http://yoursite.com/2018/12/01/linux命令/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="curl命令：该命令是一个利用url规则在命令行下工作的文件传输工具，支持文件的上传和下载。curl支持http、https、ftp等协议语法 curl（选项）（参数） 系统中没有curl可以使用yum install curl安装curl url –slient （将下载文件输出到终端，所有的下载数据写入到stdout；–slient不显示进度信息）curl http://man.linuxde">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-02T04:15:43.668Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="linux命令">
+<meta name="twitter:description" content="curl命令：该命令是一个利用url规则在命令行下工作的文件传输工具，支持文件的上传和下载。curl支持http、https、ftp等协议语法 curl（选项）（参数） 系统中没有curl可以使用yum install curl安装curl url –slient （将下载文件输出到终端，所有的下载数据写入到stdout；–slient不显示进度信息）curl http://man.linuxde">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-linux命令" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-linux命令" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/01/linux命令/" class="article-date">
   <time datetime="2018-12-01T03:28:15.000Z" itemprop="datePublished">2018-12-01</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/01/linux命令/">linux命令</a>
+    <h1 class="article-title" itemprop="name">
+      linux命令
     </h1>
   
 
@@ -120,53 +122,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Hexo搭建个人博客" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/23/Hexo搭建个人博客/" class="article-date">
-  <time datetime="2018-07-22T22:10:48.000Z" itemprop="datePublished">2018-07-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/23/Hexo搭建个人博客/">Hexo搭建个人博客</a>
-    </h1>
+    <a href="/2018/07/23/Hexo搭建个人博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hexo搭建个人博客</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hexo+github 创建个人博客<br>1 准备工作<br>. 有一个github账号<br>. 安装node.js<br>. 安装git</p>
-<p>2 搭建github博客<br>2.1 创建仓库<br>1<br>新建一个名为 你的用户名.github.io 的仓库。<br>3.配置SSH key<br>配置ssh key的原因：提交代码时需要将本地和远程仓库进行连接，直接使用用户名和密码不太安全。所以需要用ssh key解决本地和服务器连接的问题。</p>
-<p>1<br>cd ～/.ssh    检测本地已经存在的ssh密钥<br>如果提示：不存在该文件夹，则说明是第一次使用github</p>
-<p>1<br>ssh-keygen -t rsa -C   “邮件地址”<br>（连续三次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开github主页，进入setting-&gt;SSH and GPG key -&gt;new ssh key）<br>此时，还需要配置：</p>
-<p>1<br>2<br>git config —-global  user.name “昵称”<br>git congig —-global  user.email  “邮箱”<br>4.使用hexo编写个人博客<br>安装： npm install -g hexo<br>初始化： npm init blog<br>生成静态文件： hexo g<br>启动服务器： hexo s<br>部署到github： hexo d<br>使用hexo d 的前提是安装了一个插件： npm install hexo-deployer-git –-save</p>
-<p>5.hexo 常见的口令<br>hexo new “” 新建文章<br>hexo new page “” 新建页面<br>hexo generate 生成静态文件到public目录<br>hexo deploy 部署到github<br>hexo version 查看hexo的版本号</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/23/Hexo搭建个人博客/" data-id="cjp6dkl8j0001gfcgt8l372xk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
